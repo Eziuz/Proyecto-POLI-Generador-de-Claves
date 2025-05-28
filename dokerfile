@@ -1,0 +1,16 @@
+
+FROM nginx:alpine
+
+# Elimina archivos por defecto de Nginx
+RUN rm -rf /usr/share/nginx/html/*
+
+# Copia los archivos *sin renombrar* y ajusta permisos
+COPY index.txt /usr/share/nginx/html/index.html   
+COPY style.css /usr/share/nginx/html/
+COPY main.txt /usr/share/nginx/html/js/main.js   
+
+
+EXPOSE 8080
+
+# Inicia Nginx
+CMD ["nginx", "-g", "daemon off;"]
