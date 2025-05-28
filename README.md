@@ -23,7 +23,7 @@ La imagen Docker de este ejercicio está disponible en:
 - No está configurada para ejecución.
 - Fue creada únicamente para demostrar el proceso de publicación.
 
-## Tecnologías utilizadas (como referencia)
+## Tecnologías utilizadas
 - HTML5
 - CSS3
 - JavaScript
