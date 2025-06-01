@@ -18,10 +18,6 @@ Este repositorio corresponde a la **primera entrega** del proyecto del módulo, 
 La imagen Docker de este ejercicio está disponible en:  
 🔗 [Docker Hub](https://hub.docker.com/repository/docker/dennismorato/generador-claves)
 
-### Notas sobre la imagen:
-- Contiene solo los archivos estáticos del proyecto.
-- No está configurada para ejecución.
-- Fue creada únicamente para demostrar el proceso de publicación.
 
 ## Tecnologías utilizadas
 - HTML5
