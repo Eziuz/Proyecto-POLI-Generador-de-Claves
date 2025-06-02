@@ -4,8 +4,7 @@
 Este proyecto es un generador y validador de contraseñas seguras implementado en JavaScript. Permite:
 - Generar contraseñas aleatorias con diferentes combinaciones de caracteres (mayúsculas, minúsculas, números y símbolos)
 
-**Entregable Parcial: Docker Hub + GitHub**  
-*(Código de referencia - No funcional)*  
+**Entregable Parcial: Docker Hub + GitHub**   
 
 ## 📌 Contexto Académico
 Este repositorio corresponde a la **primera entrega** del proyecto del módulo, basado en herramientas de integración continua.
