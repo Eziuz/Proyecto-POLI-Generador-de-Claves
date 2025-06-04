@@ -7,18 +7,23 @@ FROM base AS deps
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
+# Habilitar corepack para Yarn 4
+RUN corepack enable
+
 # Copiar archivos de configuración de Yarn
 COPY .yarnrc.yml ./
 COPY .yarn/releases/ ./.yarn/releases/
 COPY package.json yarn.lock* ./
 
 # Instalar dependencias con Yarn 4
-RUN corepack enable && \
-    yarn install --immutable --inline-builds
+RUN yarn install --immutable
 
 # Construir la aplicación
 FROM base AS builder
 WORKDIR /app
+
+# Habilitar corepack para Yarn 4
+RUN corepack enable
 
 # Copiar dependencias y archivos de configuración
 COPY --from=deps /app/node_modules ./node_modules

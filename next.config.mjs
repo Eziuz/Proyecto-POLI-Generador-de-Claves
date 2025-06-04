@@ -1,11 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Configuración para Docker y deployment
   output: 'standalone',
-  experimental: {
-    // Removemos outputFileTracingRoot ya que no es necesario
-    // y causa el warning
+  
+  // Configuración de imágenes
+  images: {
+    domains: [],
+    unoptimized: false,
   },
-  // Configuración de headers de seguridad
+
+  // Headers de seguridad
   async headers() {
     return [
       {
@@ -31,10 +35,30 @@ const nextConfig = {
       },
     ]
   },
-  // Configuración de imágenes si es necesaria
-  images: {
-    domains: [],
-    unoptimized: false,
+
+  // Configuración de Webpack (si es necesaria)
+  webpack: (config, { isServer }) => {
+    // Configuraciones personalizadas de webpack aquí
+    return config
+  },
+
+  // Configuración experimental (solo opciones válidas)
+  experimental: {
+    // Configuraciones experimentales válidas aquí
+  },
+
+  // Configuración de TypeScript
+  typescript: {
+    // Durante el build en producción, ignorar errores de TypeScript
+    // Solo para casos específicos donde sea necesario
+    ignoreBuildErrors: false,
+  },
+
+  // Configuración de ESLint
+  eslint: {
+    // Durante el build en producción, ignorar errores de ESLint
+    // Solo para casos específicos donde sea necesario
+    ignoreDuringBuilds: false,
   },
 }
 
