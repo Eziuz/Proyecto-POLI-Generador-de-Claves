@@ -1,12 +1,14 @@
 # Dependencies
+
 node_modules
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
+yarn-error.log\*
 
 # Yarn - configuración específica
-.pnp.*
-.yarn/*
+
+.pnp._
+.yarn/_
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
@@ -14,61 +16,78 @@ yarn-error.log*
 !.yarn/versions
 
 # Runtime data
+
 pids
-*.pid
-*.seed
-*.pid.lock
+_.pid
+_.seed
+\*.pid.lock
 
 # Coverage directory used by tools like istanbul
+
 coverage
-*.lcov
+\*.lcov
 
 # nyc test coverage
+
 .nyc_output
 
 # Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
+
 .grunt
 
 # Bower dependency directory (https://bower.io/)
+
 bower_components
 
 # node-waf configuration
+
 .lock-wscript
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
+
 build/Release
 
 # Dependency directories
+
 jspm_packages/
 
 # TypeScript v1 declaration files
+
 typings/
 
 # TypeScript cache
-*.tsbuildinfo
+
+\*.tsbuildinfo
 
 # Optional npm cache directory
+
 .npm
 
 # Optional eslint cache
+
 .eslintcache
 
 # Microbundle cache
+
 .rpt2_cache/
 .rts2_cache_cjs/
 .rts2_cache_es/
 .rts2_cache_umd/
 
 # Optional REPL history
+
 .node_repl_history
 
 # Output of 'npm pack'
-*.tgz
+
+\*.tgz
 
 # Yarn Integrity file
+
 .yarn-integrity
 
 # dotenv environment variables file
+
 .env
 .env.local
 .env.development.local
@@ -76,82 +95,97 @@ typings/
 .env.production.local
 
 # parcel-bundler cache (https://parceljs.org/)
+
 .cache
 .parcel-cache
 
 # Next.js build output
+
 .next
 out
 
 # Nuxt.js build / generate output
+
 .nuxt
 dist
 
 # Gatsby files
+
 .cache/
-public
 
 # Storybook build outputs
+
 .out
 .storybook-out
 
 # Temporary folders
+
 tmp/
 temp/
 
 # Logs
+
 logs
-*.log
+\*.log
 
 # IDE files
+
 .vscode/
 .idea/
-*.swp
-*.swo
-*~
+_.swp
+_.swo
+\*~
 
 # OS generated files
-.DS_Store
+
+.DS*Store
 .DS_Store?
-._*
+.*\*
 .Spotlight-V100
 .Trashes
 ehthumbs.db
 Thumbs.db
 
 # Git
+
 .git
 .gitignore
 README.md
 
 # Docker
+
 Dockerfile*
 docker-compose*
 .dockerignore
 
 # CI/CD
+
 .github/
 .gitlab-ci.yml
 Jenkinsfile
 
 # Scripts de desarrollo
+
 scripts/
 
 # Archivos de configuración no necesarios en producción
+
 .eslintrc*
 .prettierrc*
-jest.config*
-*.config.js
-*.config.ts
+jest.config\*
+_.config.js
+_.config.ts
 !next.config.mjs
 !tailwind.config.js
 
 # Archivos de documentación
+
 docs/
-*.md
+\*.md
 !README.md
 
 # Archivos de prueba
-__tests__/
-**/*.test.*
-**/*.spec.*
+
+**tests**/
+**/_.test._
+**/_.spec._

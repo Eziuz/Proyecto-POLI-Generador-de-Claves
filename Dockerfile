@@ -32,7 +32,7 @@ COPY --from=deps /app/.yarnrc.yml ./
 COPY . .
 
 # Deshabilitar telemetría de Next.js
-ENV NEXT_TELEMETRY_DISABLED 1
+ENV NEXT_TELEMETRY_DISABLED=1
 
 # Construir la aplicación
 RUN yarn build
@@ -42,8 +42,8 @@ FROM node:20-alpine AS runner
 WORKDIR /app
 
 # Configurar entorno de producción
-ENV NODE_ENV production
-ENV NEXT_TELEMETRY_DISABLED 1
+ENV NODE_ENV=production
+ENV NEXT_TELEMETRY_DISABLED=1
 
 # Crear un usuario no-root para seguridad
 RUN addgroup --system --gid 1001 nodejs && \
@@ -68,8 +68,8 @@ USER nextjs
 EXPOSE 3000
 
 # Configurar variables de entorno para el servidor
-ENV PORT 3000
-ENV HOSTNAME "0.0.0.0"
+ENV PORT=3000
+ENV HOSTNAME="0.0.0.0"
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
