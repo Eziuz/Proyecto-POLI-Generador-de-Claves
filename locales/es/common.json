@@ -1,0 +1,66 @@
+{
+  "title": "Generador de Contraseñas Seguras",
+  "subtitle": "Crea contraseñas seguras y evalúa su fortaleza en tiempo real con nuestro generador avanzado",
+  "generator": {
+    "title": "Generador",
+    "generatedPassword": "Contraseña Generada",
+    "placeholder": "Haz clic en generar...",
+    "length": "Longitud",
+    "options": {
+      "uppercase": "Mayúsculas (A-Z)",
+      "lowercase": "Minúsculas (a-z)",
+      "numbers": "Números (0-9)",
+      "symbols": "Símbolos (!@#$...)"
+    },
+    "generateButton": "Generar Contraseña"
+  },
+  "validator": {
+    "title": "Validador",
+    "placeholder": "Ingresa una contraseña para evaluar...",
+    "evaluatePassword": "Evaluar Contraseña"
+  },
+  "strength": {
+    "label": "Fortaleza:",
+    "levels": {
+      "veryWeak": "Muy débil",
+      "weak": "Débil",
+      "fair": "Regular",
+      "good": "Buena",
+      "strong": "Fuerte",
+      "veryStrong": "Muy fuerte",
+      "excellent": "Excelente"
+    },
+    "suggestions": {
+      "title": "Sugerencias:",
+      "improvementTitle": "Sugerencias de mejora:",
+      "minLength": "Usa al menos 8 caracteres",
+      "recommendLength": "Considera usar 12+ caracteres",
+      "includeLowercase": "Incluye letras minúsculas",
+      "includeUppercase": "Incluye letras mayúsculas",
+      "includeNumbers": "Incluye números",
+      "includeSymbols": "Incluye símbolos especiales"
+    }
+  },
+  "history": {
+    "title": "Historial de Contraseñas",
+    "show": "Mostrar",
+    "hide": "Ocultar",
+    "empty": "No hay contraseñas en el historial",
+    "strengthLabel": "Fortaleza"
+  },
+  "actions": {
+    "copy": "Copiar",
+    "generate": "Generar",
+    "clear": "Limpiar",
+    "show": "Mostrar",
+    "hide": "Ocultar"
+  },
+  "accessibility": {
+    "toggleTheme": "Cambiar tema",
+    "toggleLanguage": "Cambiar idioma",
+    "showPassword": "Mostrar contraseña",
+    "hidePassword": "Ocultar contraseña",
+    "copyPassword": "Copiar contraseña",
+    "clearHistory": "Limpiar historial"
+  }
+}
