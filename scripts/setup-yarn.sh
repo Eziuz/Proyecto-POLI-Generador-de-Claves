@@ -17,7 +17,7 @@ corepack enable
 
 # Configurar Yarn 4
 echo -e "${YELLOW}Configurando Yarn 4...${NC}"
-yarn set version 4.1.0
+yarn set version 4.9.2
 
 # Crear directorio .yarn/releases si no existe
 mkdir -p .yarn/releases
