@@ -1,30 +1,82 @@
-# Password generator
+# SecurePass - Generador de Contraseñas Seguras
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+![SecurePass Logo](https://securepass.vercel.app/favicon.png)
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/dolayao/v0-password-generator)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/1nDJt0E4wmj)
+Una aplicación web moderna para generar contraseñas seguras y evaluar su fortaleza en tiempo real.
 
-## Overview
+[![Docker Image](https://img.shields.io/docker/pulls/your-dockerhub-username/securepass?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/your-dockerhub-username/securepass)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## 🐳 Uso con Docker
 
-## Deployment
+La forma más sencilla de ejecutar SecurePass es usando nuestra imagen oficial de Docker:
 
-Your project is live at:
+\`\`\`bash
+docker run -d -p 3000:3000 your-dockerhub-username/securepass:latest
+\`\`\`
 
-**[https://vercel.com/dolayao/v0-password-generator](https://vercel.com/dolayao/v0-password-generator)**
+Luego, abre tu navegador en `http://localhost:3000`.
 
-## Build your app
+### Etiquetas disponibles
 
-Continue building your app on:
+- `latest`: La versión más reciente
+- `X.Y.Z`: Versiones específicas (semver)
+- `<commit-hash>`: Versión específica por commit de Git
 
-**[https://v0.dev/chat/projects/1nDJt0E4wmj](https://v0.dev/chat/projects/1nDJt0E4wmj)**
+### Variables de entorno
 
-## How It Works
+| Variable | Descripción | Valor por defecto |
+|----------|-------------|-------------------|
+| `PORT` | Puerto en el que se ejecuta la aplicación | `3000` |
+| `NODE_ENV` | Entorno de ejecución | `production` |
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+### Docker Compose
+
+\`\`\`yaml
+version: '3.8'
+
+services:
+  securepass:
+    image: your-dockerhub-username/securepass:latest
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+\`\`\`
+
+## 🚀 Características
+
+- ✅ Generador de contraseñas con opciones personalizables
+- ✅ Validador de fortaleza en tiempo real
+- ✅ Historial de contraseñas generadas
+- ✅ Soporte multiidioma (Español/Inglés)
+- ✅ Modo oscuro/claro
+- ✅ Diseño responsive para móviles y escritorio
+- ✅ Interfaz moderna con efectos visuales
+
+## 🛠️ Desarrollo local
+
+### Requisitos previos
+
+- Node.js 20 LTS
+- Yarn 4.x
+
+### Instalación
+
+\`\`\`bash
+# Clonar el repositorio
+git clone https://github.com/your-username/securepass.git
+cd securepass
+
+# Instalar dependencias
+yarn install
+
+# Iniciar servidor de desarrollo
+yarn dev
+\`\`\`
+
+## 📄 Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+\`\`\`
+
+Ahora, vamos a crear un archivo de configuración para GitHub Actions como alternativa a Jenkins (es más fácil de configurar para muchos usuarios):
