@@ -2,23 +2,10 @@
 const nextConfig = {
   output: 'standalone',
   experimental: {
-    outputFileTracingRoot: undefined,
+    // Removemos outputFileTracingRoot ya que no es necesario
+    // y causa el warning
   },
-  // Optimizations for Docker
-  compress: true,
-  poweredByHeader: false,
-  generateEtags: false,
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  images: {
-    unoptimized: true,
-  },
-  
-  // Security headers
+  // Configuración de headers de seguridad
   async headers() {
     return [
       {
@@ -26,20 +13,29 @@ const nextConfig = {
         headers: [
           {
             key: 'X-Frame-Options',
-            value: 'DENY'
+            value: 'DENY',
           },
           {
             key: 'X-Content-Type-Options',
-            value: 'nosniff'
+            value: 'nosniff',
           },
           {
             key: 'Referrer-Policy',
-            value: 'strict-origin-when-cross-origin'
-          }
-        ]
-      }
+            value: 'origin-when-cross-origin',
+          },
+          {
+            key: 'X-XSS-Protection',
+            value: '1; mode=block',
+          },
+        ],
+      },
     ]
-  }
+  },
+  // Configuración de imágenes si es necesaria
+  images: {
+    domains: [],
+    unoptimized: false,
+  },
 }
 
 export default nextConfig
