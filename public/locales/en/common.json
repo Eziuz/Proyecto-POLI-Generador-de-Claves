@@ -1,0 +1,66 @@
+{
+  "title": "Secure Password Generator",
+  "subtitle": "Create secure passwords and evaluate their strength in real-time with our advanced generator",
+  "generator": {
+    "title": "Generator",
+    "generatedPassword": "Generated Password",
+    "placeholder": "Click generate...",
+    "length": "Length",
+    "options": {
+      "uppercase": "Uppercase (A-Z)",
+      "lowercase": "Lowercase (a-z)",
+      "numbers": "Numbers (0-9)",
+      "symbols": "Symbols (!@#$...)"
+    },
+    "generateButton": "Generate Password"
+  },
+  "validator": {
+    "title": "Validator",
+    "placeholder": "Enter a password to evaluate...",
+    "evaluatePassword": "Evaluate Password"
+  },
+  "strength": {
+    "label": "Strength:",
+    "levels": {
+      "veryWeak": "Very weak",
+      "weak": "Weak",
+      "fair": "Fair",
+      "good": "Good",
+      "strong": "Strong",
+      "veryStrong": "Very strong",
+      "excellent": "Excellent"
+    },
+    "suggestions": {
+      "title": "Suggestions:",
+      "improvementTitle": "Improvement suggestions:",
+      "minLength": "Use at least 8 characters",
+      "recommendLength": "Consider using 12+ characters",
+      "includeLowercase": "Include lowercase letters",
+      "includeUppercase": "Include uppercase letters",
+      "includeNumbers": "Include numbers",
+      "includeSymbols": "Include special symbols"
+    }
+  },
+  "history": {
+    "title": "Password History",
+    "show": "Show",
+    "hide": "Hide",
+    "empty": "No passwords in history",
+    "strengthLabel": "Strength"
+  },
+  "actions": {
+    "copy": "Copy",
+    "generate": "Generate",
+    "clear": "Clear",
+    "show": "Show",
+    "hide": "Hide"
+  },
+  "accessibility": {
+    "toggleTheme": "Toggle theme",
+    "toggleLanguage": "Toggle language",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "copyPassword": "Copy password",
+    "clearHistory": "Clear history"
+  }
+}
