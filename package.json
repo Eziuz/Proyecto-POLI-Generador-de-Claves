@@ -1,5 +1,5 @@
 {
-  "name": "securepass",
+  "name": "generador-claves",
   "version": "1.0.0",
   "private": true,
   "scripts": {
