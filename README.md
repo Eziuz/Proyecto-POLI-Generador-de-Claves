@@ -1,7 +1,5 @@
 # Proyecto Poli - Generador de Contraseñas Seguras
 
-![SecurePass Banner](https://via.placeholder.com/1200x400/3b82f6/ffffff?text=SecurePass+-+Generador+de+Contraseñas+Seguras)
-
 Una aplicación web moderna desarrollada con **Next.js 14** para generar contraseñas seguras y evaluar su fortaleza en tiempo real. Este proyecto incluye un pipeline completo de **CI/CD con Jenkins** y **Docker** para demostrar las mejores prácticas de desarrollo y despliegue.
 
 [![Docker Image](https://img.shields.io/docker/pulls/dennismorato/generador-claves?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/dennismorato/generador-claves)
