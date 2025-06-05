@@ -5,7 +5,7 @@ pipeline {
         // Configuración de DockerHub
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials')
         DOCKERHUB_USERNAME = "${DOCKERHUB_CREDENTIALS_USR}"
-        DOCKERHUB_REPO = 'securepass'
+        DOCKERHUB_REPO = 'generador-claves'
 
         // Etiquetas de la imagen con versionado semántico
         IMAGE_NAME = "${DOCKERHUB_USERNAME}/${DOCKERHUB_REPO}"
