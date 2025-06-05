@@ -70,7 +70,7 @@ graph TB
 ## 📁 Estructura del Proyecto
 
 ```plaintext
-securepass/
+Proyecto-POLI-Generador-de-Claves/
 ├── 📁 app/                          # Next.js App Router
 │   ├── globals.css                  # Estilos globales
 │   ├── layout.tsx                   # Layout principal
