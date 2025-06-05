@@ -98,7 +98,6 @@ Proyecto-POLI-Generador-de-Claves/
 ├── 📁 scripts/                      # Scripts de automatización
 │   ├── release.sh                   # Script de release
 ├── Dockerfile                       # Configuración Docker
-├── docker-compose.yml               # Orquestación Docker
 ├── Jenkinsfile                      # Pipeline CI/CD
 ├── next.config.mjs                  # Configuración Next.js
 ├── tailwind.config.js               # Configuración Tailwind
@@ -131,7 +130,6 @@ Proyecto-POLI-Generador-de-Claves/
 ### Infraestructura
 
 - **[DockerHub](https://hub.docker.com/)** - Registry de imágenes
-- **[Nginx](https://nginx.org/)** - Proxy reverso (opcional)
 - **[Node.js 20 LTS](https://nodejs.org/)** - Runtime de JavaScript
 
 
@@ -211,16 +209,6 @@ docker run -d -p 3000:3000 --name generador-claves generador-claves:latest
 # O usar el script automatizado
 chmod +x scripts/run-docker.sh
 ./scripts/run-docker.sh latest 3000
-```
-
-### Docker Compose
-
-```shellscript
-# Ejecutar con Docker Compose
-docker-compose up -d
-
-# Con Nginx (perfil de producción)
-docker-compose --profile production up -d
 ```
 
 ### Usar Imagen de DockerHub
